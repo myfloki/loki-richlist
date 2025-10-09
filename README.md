@@ -3,7 +3,7 @@
   <img src="lokirich.png" alt="loki richlist dashboard" width="540">
 </p>
 
-`loki-richlist` is a standalone CLI for maintaining and reporting the richest addresses on a Flokicoin chain. It reuses the node’s `ffldb` database, tracks per-address balances with resume support, and prints a human-readable rich list summary after each run.
+`loki-richlist` is a standalone CLI for maintaining and reporting the richest addresses on a Lokichain. It reuses the node’s `ffldb` database, tracks per-address balances with resume support, and prints a human-readable rich list summary after each run.
 
 ### Requirements
 
@@ -16,7 +16,7 @@
 go run .
 ```
 
-First sync your Flokicoin node using the [run-a-node guide](https://docs.flokicoin.org/lokichain#run-a-node), then shut the node down so the CLI can read a clean snapshot from `ffldb`. Rich list state lives under `richlist`, namespaced per network.
+First sync your Lokichain using the [run-a-node guide](https://docs.flokicoin.org/lokichain#run-a-node), then shut the node down so the CLI can read a clean snapshot from `ffldb`. Rich list state lives under `richlist`, namespaced per network.
 
 - `--datadir` (optional): Custom `flokicoind` data path; defaults to the node’s standard location.
 - `--dbtype` (default `ffldb`): Backend for block and rich list storage.
